@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: white;
+    font-family: "Inter", sans-serif;
+}
+
+.hauptbox {
+    background-color: gainsboro;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    padding: 70px;
+    margin-top: 50px;
+    border: 10%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 11px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+nav {
+    display: flex;
+}
+nav h1 {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+nav button {
+    width: 15%;
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 15px;
+    background: #e0e0e0;
+    box-shadow: inset 5px 5px 10px #bcbcbc, inset -5px -5px 10px #ffffff;
+}
+nav button:last-of-type i {
+    color: red;
+}
+
+.line {
+    margin-top: 25px;
+    border: 1px solid #c5c5c5;
+    border-radius: 5px;
+    height: 12px;
+    background: rgb(36, 183, 212);
+    background: linear-gradient(
+        90deg,
+        rgba(36, 183, 212, 1) 0%,
+        rgba(53, 126, 189, 1) 23%,
+        rgba(110, 187, 241, 1) 47%,
+        rgba(235, 246, 253, 1) 66%,
+        rgba(255, 255, 255, 1) 100%
+    );
+}
+
+.basse {
+    border: 1px solid gray;
+    height: 10px;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 15px;
+    background: rgb(32, 33, 33);
+    background: linear-gradient(180deg, rgba(32, 33, 33, 1) 0%, rgba(255, 251, 251, 1) 60%, rgba(255, 255, 255, 1) 100%);
+}
+
+img {
+    width: 80%;
+    aspect-ratio: 1;
+    margin-top: 10px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+h2 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+h3 {
+    margin-top: 10px;
+    font-weight: bolder;
+    color: grey;
+}
+.control button {
+    margin: 15px;
+    width: 15%;
+    aspect-ratio: 1;
+    border: none;
+}
+.control {
+    display: flex;
+    justify-content: space-between;
+}
+
+.control button:nth-child(1),
+.control button:nth-child(3) {
+    border-radius: 15px;
+    background: #e0e0e0;
+    box-shadow: -4px 6px 10px #c3c3c3, 6px -6px 10px #fdfdfd;
+}
+.fa-backward,
+.fa-forward {
+    font-size: 30px;
+    color: rgb(74, 73, 73);
+}
+.fa-play {
+    color: aqua;
+    font-size: 30px;
+}
+.control button:nth-child(2) {
+    border-radius: 15px;
+    background: #e0e0e0;
+    box-shadow: inset -5px 5px 10px #bcbcbc, inset 5px -5px 10px #ffffff;
+}
